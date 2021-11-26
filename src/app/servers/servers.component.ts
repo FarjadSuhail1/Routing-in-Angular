@@ -9,6 +9,7 @@ import { ActivatedRoute, Router } from '@angular/router'
 export class ServersComponent implements OnInit {
   public servers: {id: number, name: string, status: string}[] = [];
 
+  //injecting to use as realtive path
   constructor(private serversService: ServersService,
     private router: Router,
     private route: ActivatedRoute) { }
